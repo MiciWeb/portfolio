@@ -1,0 +1,218 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #15A3B8;
+    ;
+    font-family: Poppins;
+}
+.h2span{
+    color: white;
+    margin: 10%;
+    text-shadow: 10px 5px 10px black;
+}
+h1{
+    color: white;
+    text-shadow: 10px 5px 10px black;
+    width: 60%;
+    margin: 20px auto 0px auto;
+    }
+.container{
+margin-top: 15%;
+width: 100%;
+height: 100%;
+display: flex;
+align-content: center;
+justify-content: center;
+
+}
+.container .shoes{
+background-color: #232323;
+width: 200px;
+height: 40vh;
+position: relative;
+margin-left: -10px;
+display: flex;
+flex-direction: column-reverse;
+border-radius:15px ;
+}
+.shoes{
+    box-shadow: 10px 10px 10px black;
+}
+.container .shoes:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9bdc28;
+    clip-path: circle(80px at 15% 9%);
+    transition: 0.5s ease-in-out;
+}
+.container .shoes:hover:before{
+    clip-path: circle(150px at 10% 0%);
+}
+.container .shoes:after {
+    content: "";
+    z-index: 1;
+    font-size: 115px;
+    font-weight:800;
+    position: absolute;
+    top: 80px;
+    color: black;
+    font-style: italic;
+    clip-path: circle(300px at 0% 80%);
+    background-color: lightblue;
+}
+.container .shoes:hover .shoesimg{
+    transform: rotate(17deg);
+    position: absolute;
+    right: 28px;
+    top: 10px;
+    width: auto;
+    height: 40vh;
+    z-index: 1;
+}
+    .shoesimg{
+        position: absolute;
+        transform: translateY(-5%);
+        transition: 0.7s;
+        right: 28px;
+        top: 25%;
+        width: auto;
+        height: 200px;
+        z-index: 1;
+        
+    }
+    
+    .textshoes{
+        transform: translateY(42%);
+        transition: 0.7s;
+        color: white;
+        text-align: center;
+        font-size: 11px;
+        z-index: 1;
+        
+        
+    }
+    .container .shoes:hover .textshoes{
+        transform: translateY(-150%);
+        color: white;
+        text-align: center;
+        font-size: 11px;
+        z-index: 1;
+        
+    }
+    .container .shoes:hover .textshoes .textopacity{
+        
+        opacity: 1;
+        transition-delay:0.3s ;
+        
+    }
+    .container .shoes .textshoes .textopacity{
+        opacity: 0;
+    }
+    .container .shoes:hover .textshoes .colorarea{
+        opacity: 1;
+        transition-delay: 0.5s;
+    }
+    .container .shoes .textshoes .colorarea{
+        opacity: 0;
+    }
+        button{
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            opacity: 1;
+        }
+        button:hover{
+            opacity: 0.8;
+            border: 1px solid #ffffff;
+            
+        }
+        .container .shoes .textshoes h2{
+            position: absolute;
+            left: 25%;
+            transform: translateY(-45px);
+            text-align: center;
+        }
+        .container .shoes h4{
+            position: absolute;
+            bottom: 0;
+            left: 30%;
+            transform: translateY(35%);
+            
+            visibility: hidden;
+            color: white;
+            text-align: center;
+            font-size: 11px;
+            bottom: 6px;
+            }
+        
+        .container .shoes:hover  h4{
+          visibility:visible ;
+        transition-delay: 0.5s;
+        transform: translateY(0%);
+        color: white;
+        text-align: center;
+        font-size: 11px;
+        
+        
+        
+        }
+        
+
+.colorarea{
+   display: flex;
+   justify-content: space-around;
+   width: 65%;
+   margin: auto;
+   padding-top: 10px;
+   animation-name: welcome;
+   animation-duration: 4s;
+   
+ }
+         #minicircle1, #minicircle2, #minicircle3 {
+             width: 60%;
+             opacity: 0.8;
+         }
+         #minicircle1:hover, #minicircle2:hover, #minicircle3:hover{
+             opacity: 1;
+             border: 1px solid;
+         }
+            #minicircle1{
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background-color: rgb(149, 235, 79);
+            }
+            #minicircle2{
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background-color: blue;
+                
+            }
+            #minicircle3{
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background-color: red;
+            }
+
+span button{
+    padding: 7px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+@media screen and (max-width: 900px) {
+    .h2span{
+      display: none;
+    }
+}
+@media screen and (min-width: 900px) {
+    h1{
+        display: none;
+    }
+}

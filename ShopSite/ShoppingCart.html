@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <!-- Own Carousel CDN -->
+  <link rel="stylesheet" href="./cssstyle/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./cssstyle/owl.carousel.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="./cssstyle/bootstrap.min.css">
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="./cssstyle/style.css">
+</head>
+  <body>
+
+                                <!--- En-tête de la page --->
+
+          <!--- Navigation --->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top color-primary-bg">
+<a class="navbar-brand font-poppins" href="Shop.html">Mici Shop</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav m-auto font-rale ">
+  <li class="nav-item">
+    <a class="nav-link font-poppins" href="#top-sale">On Sale</a>
+    </li>
+<li class="nav-item dropdown">
+  <a class="font-poppins nav-link dropdown-toggle" href="#" id="product" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Product
+  </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+    <a class="dropdown-item" href="#">Nike</a>
+    <a class="dropdown-item" href="#">Adidas</a>
+    <a class="dropdown-item" href="#">Puma</a>
+  </div>
+</li>
+<li class="nav-item dropdown">
+  <a class="font-poppins nav-link dropdown-toggle" href="#" id="product" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Category
+  </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+    <a class="dropdown-item" href="#">Pull</a>
+    <a class="dropdown-item" href="#">T-Shirt</a>
+    <a class="dropdown-item" href="#">Shoes</a>
+  </div>
+</li>
+<li class="nav-item">
+<a class="nav-link font-poppins" href="nike.html">Coming Soon</a>
+</li>
+</ul>
+<form action="#" class=" font-rale">
+  <a href="ShoppingCart.html" class="pull right py-2 rounded-pill color-primary-bg">
+    <span id="btn1" class=" rounded-pill px-2 text-white"><i class="fa fa-shopping-cart"></i></span>
+    <span id="btn2" class="px-3 py-2 rounded-pill text-dark bg-light"><h6>0</h6></span>
+</a>
+</form>
+</div>
+</nav>
+ 
+ 
+                                <!--- Contenu de la page --->
+  <main id="main">
+    <!--- Shopping Cart Section --->
+    <section id="cart" class="py-3">
+        <div class="container-fluid">
+          <div class="products-container py-5 ">
+            <div class="product-header producttitle row justify-content-around pl-5">
+              <h5 class="font-poppins product-title pl-5">Product</h5>
+              <h5 class="font-poppins price pl-3">Price</h5>
+              <h5 class="font-poppins quantity ">Quantity</h5>
+              <h5 class="font-poppins total">Total</h5>
+            </div> 
+          </div>
+
+
+
+            <hr>
+
+            
+          
+                    <!---Subtotal Section--->
+                    <div class="col-md-3 pr-5">
+                      
+                        <div class="sub-total text-center mt-2 border py-3">
+                             <h6 class="text-success font-size-16"><i class="fa fa-check"></i>Your order is eligible for free delivery.</h6>
+                             <div class="border py-4">
+                                 <h5 class="pb-2 font-poppins">Subtotal (X item)&nbsp;<span class="text-danger">$<span class="text-danger"> <script>function ShowPrice(){element.innerHTML="zebi";}</script></span></span></h5>
+                                 <button type="submit" class="btn">Proceed To Buy</button>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
+    </section>
+
+  
+   <!--- Top Sale --->
+   <section id="top-sale">
+   <div class="container">
+     <h4 class="pt-5 font-poppins">Top Sale !</h4>
+    <!--- Caroussel 2 --->
+    <div class="owl-carousel owl-theme">
+      <div class="item py-2">
+        <div class="product font-rale">
+          <a href="#nikepulllink"><img src="images/nikepull.png" alt="Nike Pull" class="img-fluid"></a>
+          <div class="text-center">
+            <h6>Nike Pull V2.1</h6>
+            <small><s class="text-secondary">75.99€</s></small>
+                <span class="price">39.99€</span>
+          </div>
+        </div>
+      </div>
+      <div class="item py-2">
+        <div class="product font-rale">
+          <a href="#greypumapulllink"><img src="images/pumapullgrey.png" alt="Puma Pull" id="greypumapulllink" class="img-fluid"></a>
+          <div class="text-center">
+            <h6>Grey Puma Pull &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h6>
+            <small><s class="text-secondary">35.99€</s></small>
+                <span class="price">20.99€</span>
+
+          </div>
+        </div>
+      </div>
+      <div class="item py-2">
+        <div class="product font-rale">
+          <a href="#redadidaspulllink"><img src="images/adidaspullblue.png" alt="Adidas Pull" class="img-fluid pr-3"></a>
+          <div class="text-center">
+            <h6>Adidas Pull V1.2</h6>
+            <small><s class="text-secondary">45€</s></small>
+                <span class="price">34€</span>
+          </div>
+        </div>
+      </div>
+      <div class="item py-2">
+        <div class="product font-rale">
+          <a href="#blueadidaspulllink"><img src="images/adidaspullred.png" alt="Adidas Pull" class="img-fluid"></a>
+          <div class="text-center">
+            <h6>Adidas Pull V3.4</h6>
+            <small><s class="text-secondary">45.99€</s></small>
+                <span class="price">29.99€</span>
+          </div>
+        </div>
+      </div>
+      <div class="item py-2">
+        <div class="product font-rale">
+          <a href="#blackpumapulllink"><img src="images/pumapullblack.png" alt="puma Pull" class="img-fluid"></a>
+          <div class="text-center">
+            <h6>Puma Pull V4</h6>
+            <small><s class="text-secondary">100€</s></small>
+                <span class="price">75€</span>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </section> 
+
+  </main>
+
+
+                                <!--- Bas de la page --->
+<footer>
+  <!-- Footer -->
+<footer class="page-footer font-small bg-dark">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 color-primary-bg">© 2020 Copyright by Mici
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</footer>
+                  
+
+
+                                <!--- Divers scripts --->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="./js/isotope.pkgd.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

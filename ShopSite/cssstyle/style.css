@@ -1,0 +1,228 @@
+/*  Import */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* Variables */
+/* global classes */
+.filter-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 540px) {
+  .producttitle {
+    display: none;
+  }
+}
+
+#btn2 {
+  border-radius: 50%;
+}
+
+.btn {
+  background-color: #15A3B8;
+  color: whitesmoke;
+}
+
+.btn:hover {
+  color: #15A3B8;
+  background-color: whitesmoke;
+}
+
+#nikeshoeslink {
+  width: 350PX;
+  height: 204PX;
+  margin-bottom: 22PX;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+  .grid {
+    padding-left: 10%;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .grid {
+    margin-left: 13%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .grid {
+    margin-left: 0%;
+  }
+}
+
+.grid-item {
+  padding: 10px;
+  margin: 10px;
+}
+
+@media screen and (min-width: 10px) {
+  .grid-item {
+    width: 250px;
+  }
+}
+
+button {
+  background-color: #15A3B8;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.product {
+  padding-bottom: 15px;
+  border: 3px ridge #15A3B8;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.product img {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.product img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#greypumapulllink {
+  width: 76%;
+  margin-top: 6%;
+  margin-left: 1%;
+}
+
+.card {
+  font-family: "Poppins";
+}
+
+.card .body {
+  border: transparent;
+}
+
+.card .title {
+  border: 2px solid black;
+  border-left: none;
+  border-RIGHT: none;
+}
+
+#banner-area img {
+  height: 80vh;
+  width: 100%;
+  border-top: 5px ridge #15A3B8;
+  border-bottom: 5px ridge #15A3B8;
+}
+
+@media screen and (max-width: 640px) {
+  #banner-area img {
+    height: 325px;
+  }
+}
+
+#btn1, #btn2 {
+  display: inline-block;
+}
+
+button, button:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+#short {
+  margin-top: 19%;
+  margin-bottom: 20%;
+}
+
+.fa-star, .fa-star-o, .fa-star-half-o {
+  color: #15A3B8;
+}
+
+.fa-star:hover, .fa-star-o:hover, .fa-star-half-o:hover {
+  color: gold;
+  cursor: pointer;
+}
+
+.fa-shopping-cart {
+  padding-left: 3%;
+}
+
+img {
+  -webkit-filter: drop-shadow(5px 5px 5px grey);
+          filter: drop-shadow(5px 5px 5px grey);
+}
+
+/*  typography classes */
+.zeo {
+  color: gold;
+}
+
+.font-baloo {
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+.font-rale {
+  font-family: "Raleway", cursive;
+}
+
+.font-poppins {
+  font-family: "Poppins";
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+/* Color Template */
+.color-primary {
+  color: #15A3B8;
+}
+
+.color-primary-bg {
+  background-color: #15A3B8;
+}
+
+.color-second {
+  color: gold;
+}
+
+.color-second-bg {
+  background-color: gold;
+}
+/*# sourceMappingURL=style.css.map */

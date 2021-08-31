@@ -1,5 +1,4 @@
 $(".night").click(function() {
-
     $(".icons-bar").addClass("iconsBarColorJs");
 
     $(".main-note").addClass("borderLeftJs");

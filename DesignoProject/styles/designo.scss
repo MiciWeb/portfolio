@@ -182,9 +182,9 @@ ul.nav-items.burger-active {
                 width: 100px;
             }
         }
-    }
-    .nav-link {
-        color: white !important;
+        &__link {
+            color: white !important;
+        }
     }
     .burger-active {
         height: 100px;

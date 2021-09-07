@@ -250,7 +250,7 @@ ul.nav-items.burger-active {
   .nav__item:nth-child(1) {
     width: 100px;
   }
-  .nav-link {
+  .nav__link {
     color: white !important;
   }
   .burger-active {

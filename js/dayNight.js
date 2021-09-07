@@ -1,4 +1,4 @@
-$(".night").click(function() {
+$(".night").click(function () {
     $(".icons-bar").addClass("iconsBarColorJs");
 
     $(".main-note").addClass("borderLeftJs");
@@ -17,13 +17,13 @@ $(".night").click(function() {
 
     $(".note-folder").addClass("note-folderNightJs");
 
-    $(".trash").css("fill","white");
+    $(".trash").css("fill", "white");
 
-    $(".trash").hover(function(){
+    $(".trash").hover(function () {
         $(this).addClass("svgFolderJs");
     })
-}); 
-$(".day").click(function() {
+});
+$(".day").click(function () {
 
     $(".icons-bar").removeClass("iconsBarColorJs");
 
@@ -43,14 +43,14 @@ $(".day").click(function() {
 
     $(".note-folder").removeClass("note-folderNightJs");
 
-    $(".trash").css("fill","black");
+    $(".trash").css("fill", "black");
 
-    $(".trash").hover(function(){
+    $(".trash").hover(function () {
         $(this).removeClass("svgFolderJs");
     })
-}); 
+});
 
-$(".note-folder").click(function(){
+$(".note-folder").click(function () {
     $(this).toggleClass("noteFolderJs");
     $(this).toggleClass("nightFontJs2");
     $(".note-number").toggleClass("nightFontJs");
@@ -59,21 +59,21 @@ $(".note-folder").click(function(){
 
 $(".day").addClass("borderModeJs");
 
-$(".day").click(function(){
+$(".day").click(function () {
     $(this).addClass("borderModeJs");
     $(".night").removeClass("borderModeJs");
 })
 
-$(".night").click(function(){
+$(".night").click(function () {
     $(this).addClass("borderModeJs");
     $(".day").removeClass("borderModeJs");
-})  
+})
 
-    //note function 
- $(".title-note1").click(function(){
-   $(".trash").click(function(){
-      $(".main-note, .title-note1").hide();
-   });
-   $(".title-note1").toggleClass("title-color-js");
+//note function 
+$(".trash").click(function () {
+    $(".main-note, .title-note1").hide();
+});
+$(".title-note1").click(function () {
+    $(".title-note1").toggleClass("title-color-js");
 });
 

@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    
     $(".contact-icon").hover(function(){
         $(".contactme-alert").show();
     }, function(){

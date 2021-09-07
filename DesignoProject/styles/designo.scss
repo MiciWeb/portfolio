@@ -155,30 +155,32 @@ ul.nav-items.burger-active {
         background-color: #333136;
         margin: 5px;
     }
-    .nav-items {
-        border-top-right-radius: 8px;
-        border-top-left-radius: 8px;
-        z-index: 10;
-        position: absolute;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-left: -3%;
-        top: 80px;
-        right: 0;
-        width: 100%;
-        background: #333136;
-        height: 0px;
-        transition: 0.35s ease;
-        @media screen and (max-width: 300px) {
-            flex-direction: column;
+    .nav {
+        &__items {
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            z-index: 10;
+            position: absolute;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: -3%;
+            top: 80px;
+            right: 0;
+            width: 100%;
+            background: #333136;
+            height: 0px;
+            transition: 0.35s ease;
+            @media screen and (max-width: 300px) {
+                flex-direction: column;
+            }
         }
-    }
-    .nav-item {
-        margin: 0;
-        display: none;
-        &:nth-child(1) {
-            width: 100px;
+        &__item{
+            margin: 0;
+            display: none;
+            &:nth-child(1) {
+                width: 100px;
+            }
         }
     }
     .nav-link {
@@ -789,12 +791,12 @@ footer {
     &__brand img {
         height: 25px;
     }
-    &__nav{
+    &__nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         height: 80px;
-        @media screen and (max-width:700px){
+        @media screen and (max-width: 700px) {
             flex-direction: column;
         }
     }
@@ -861,7 +863,8 @@ footer {
             width: 200px;
         }
     }
-    &__location > p, &__contact > p{
+    &__location > p,
+    &__contact > p {
         margin: 10px 0;
         @media screen and (max-width: 700px) {
             margin-top: 20px;
@@ -882,8 +885,8 @@ footer {
             justify-content: center;
         }
     }
-    &__logos{
-        fill: #E7816B;
+    &__logos {
+        fill: #e7816b;
         width: 143px;
         margin-top: 60px;
         @media screen and (max-width: 1200px) {

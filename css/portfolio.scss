@@ -649,43 +649,84 @@ html,body{
     background-color: white;
     margin: 0;
     margin: auto;
+    border-top: 1px solid black;
 }
 .projects-section > div{
     position: relative;
 }
-.project1{
+.project{
     @include projects();
-    background-color: #E5826B;
+    background-color: white;
 }
-.project2{
-    @include projects();
-    background-color: #F4B498;
+.web{
+    position: absolute;
+    top: 5px;
+    right: 90px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid;
+    cursor: pointer;
+    a{
+        font-size: 14px;
+        color: black;
+    }
+    &:hover{
+        transform: scale(1.04);
+    }
 }
-.project3{
-        @include projects();
-    background-color: #8064D3;
+.fa-globe{
+    transform: translateX(0px)translateY(1px);
 }
-.project4{
-        @include projects();
-    background-color: #12A4B8;
+.fa-readme{
+    transform: translateY(2px);
 }
-.project5{
-        @include projects();
-    background-color: #0CED76;
+.readme{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid;
+    cursor: pointer;
+    a{
+        font-size: 14px;
+        color: black;
+    }
+    &:hover{
+        transform: scale(1.04);
+    }
 }
-.project6{
-        @include projects();
-        position: relative;
-        img{
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%,-50%);
-            width: 50%;
-            height: 50%;
+// .project2{
+//     @include projects();
+//     background-color: #F4B498;
+// }
+// .project3{
+//         @include projects();
+//     background-color: #8064D3;
+// }
+// .project4{
+//         @include projects();
+//     background-color: #12A4B8;
+// }
+// .project5{
+//         @include projects();
+//     background-color: #0CED76;
+// }
+// .project6{
+//         @include projects();
+//         position: relative;
+//         img{
+//             position: absolute;
+//             left: 50%;
+//             top: 50%;
+//             transform: translate(-50%,-50%);
+//             width: 50%;
+//             height: 50%;
             
-        }
-}
+//         }
+// }
 
 /*** Gps Container ***/
 .gps-container{
@@ -917,7 +958,7 @@ html,body{
 }
 .bottom-ipad{
     display: none;
-    z-index: 1;
+    transform: translateY(3px);
 }
 .iphone{
     display: none;
@@ -1288,5 +1329,7 @@ html,body{
     }
 }
 .overlay{
-    z-index: 10;
+}
+.project img{
+
 }

@@ -64,6 +64,11 @@
   background-size: contain;
 }
 
+.macnitor {
+  width: 100vw;
+  height: 100%;
+}
+
 /*** Main ***/
 html, body {
   margin: 0;
@@ -835,7 +840,6 @@ html, body {
   background-color: white;
   margin: 0;
   margin: auto;
-  border-top: 1px solid black;
 }
 
 .projects-section > div {
@@ -1194,6 +1198,7 @@ html, body {
   width: 50px;
   height: 50px;
   background-size: contain;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 500px) {

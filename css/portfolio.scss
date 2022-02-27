@@ -83,6 +83,10 @@
         }
     }
 }
+.macnitor{
+    width: 100vw;
+    height: 100%;
+}
 /*** Main ***/
 // @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 html,body{
@@ -649,7 +653,6 @@ html,body{
     background-color: white;
     margin: 0;
     margin: auto;
-    border-top: 1px solid black;
 }
 .projects-section > div{
     position: relative;
@@ -909,6 +912,7 @@ html,body{
 }
 .github-icon{
     @include iconPosition();
+    border-radius: 50%;
     @media screen and (max-width:500px){
         display: none;
     }

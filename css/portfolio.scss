@@ -1,4 +1,4 @@
-@mixin projects{
+@mixin projects {
     width: 100%;
     height: 100%;
     border: 1px solid black;
@@ -9,31 +9,31 @@
     width: 100%;
 }
 @mixin dots {
-    .dot1{
-        background-color: #ED594A;
+    .dot1 {
+        background-color: #ed594a;
         height: 11px;
         width: 11px;
         border-radius: 50%;
         margin-right: 7px;
         opacity: 1;
     }
-    
-    .dot2{
-        background-color: #FDD800;
+
+    .dot2 {
+        background-color: #fdd800;
         height: 11px;
         width: 11px;
         border-radius: 50%;
         left: 30px;
         margin-right: 7px;
     }
-    
-    .dot3{
+
+    .dot3 {
         background-size: contain;
-        background-color: #5AC05A;
+        background-color: #5ac05a;
         height: 11px;
         width: 11px;
         border-radius: 50%;
-    }  
+    }
 }
 @mixin iconAlertPosition {
     position: absolute;
@@ -43,7 +43,7 @@
     height: 85%;
     display: none;
 }
-@mixin iconPosition{
+@mixin iconPosition {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -54,7 +54,7 @@
 }
 
 /*** Windows dot ***/
-.dots{
+.dots {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,99 +62,104 @@
     padding-left: 0px;
     height: 7%;
     padding-top: 7px;
-    .dotshover{
+    .dotshover {
         display: flex;
         width: 80%;
         height: 10px;
         padding: 2px;
     }
-    &:hover{
-        .dot1{
+    &:hover {
+        .dot1 {
             background-image: url(../images/close.png);
-            background-size: contain;   
+            background-size: contain;
         }
-        .dot2{
+        .dot2 {
             background-image: url(../images/delete.png);
             background-size: contain;
         }
-        .dot3{
+        .dot3 {
             background-image: url(../images/resize.png);
             background-size: contain;
         }
     }
 }
-.macnitor{
+.macnitor {
     width: 100vw;
     height: 100%;
 }
 /*** Main ***/
 // @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-html,body{
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     height: 100vh;
-    width: 100vw;
+    width: 90vw;
     font-family: sans-serif;
+    background-color: #ffffff;
 }
-.desktop{
-    @include h100w100(); 
+body {
+    overflow-x: hidden;
 }
-.night-background{
+
+.desktop {
+    @include h100w100();
+}
+.night-background {
     display: none;
     transition: all 3s;
 }
-.day-background{
+.day-background {
     height: 100vh;
     width: 100vw;
 }
-.nightBackgroundJs{
+.nightBackgroundJs {
     display: none;
 }
 
-.iconsBarColorJs{
-    background-color: rgba(83, 99, 119, 0.80) !important;
+.iconsBarColorJs {
+    background-color: rgba(83, 99, 119, 0.8) !important;
 }
-.borderLeftJs{
+.borderLeftJs {
     border-left: 1px solid rgba(197, 204, 211, 0.2) !important;
 }
-.borderModeJs{
-    border: 2px solid #007AFF;
+.borderModeJs {
+    border: 2px solid #007aff;
 }
-.dayBackgroundJs{
+.dayBackgroundJs {
     display: flex;
     height: 100vh;
     width: 100vw;
     transition: all 0.3s;
 }
-.nightTransparentBackgroundJs{
+.nightTransparentBackgroundJs {
     background: rgba(32, 32, 32, 0.96) !important;
     transition: all 0.3s;
-
 }
-.top-rowNightJS{
-    background-color: #3A3837 !important;
+.top-rowNightJS {
+    background-color: #3a3837 !important;
     transition: all 0.3s;
 }
-.note-folderNightJs{
+.note-folderNightJs {
     background-color: #434040 !important;
 }
-.noteFolderJs{
+.noteFolderJs {
     background-color: purple !important;
     color: white;
 }
-.macnitor{
-    width: 100%;
-    filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+.macnitor {
+    width: 100vw;
+    filter: drop-shadow(2px 2px 25px rgba(0, 0, 0, 0.5));
 }
-.top-mac{
-    img{
+.top-mac {
+    img {
         z-index: 1;
     }
     width: 100%;
-    filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+    filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
 }
-.full-screen{
+.full-screen {
     height: 100% !important;
     width: 100% !important;
     z-index: 1 !important;
@@ -162,47 +167,47 @@ html,body{
     left: 0 !important;
     border-radius: 4px !important;
 }
-.index2{
+.index2 {
     z-index: 2;
-    @media screen and (max-width:1070px){
+    @media screen and (max-width: 1070px) {
         z-index: 0;
     }
 }
-.index0{
-    z-index: 0 ;
+.index0 {
+    z-index: 0;
 }
-.nightJs{
+.nightJs {
     background-color: #292929 !important;
     transition: all 0.3s;
 }
-.borderJs{
+.borderJs {
     border-radius: 8px !important;
 }
-.nightBorderJs{
+.nightBorderJs {
     border: 1px solid #434343 !important;
 }
-.nightFontJs{
-     color: white !important;
+.nightFontJs {
+    color: white !important;
 }
-.nightFontJs2{
-     color: white !important;
+.nightFontJs2 {
+    color: white !important;
 }
-.displayNoneJs{
+.displayNoneJs {
     display: none;
 }
 
 /*** Note Container ***/
-.note-container{
+.note-container {
     display: flex;
     position: absolute;
     top: 7%;
     left: 5%;
     border: 1px solid #f1f1f1;
     border-radius: 8px;
-    width: 40%; 
+    width: 40%;
     height: 45%;
 }
-.left-column-note{
+.left-column-note {
     display: flex;
     flex-direction: column;
     background: rgba(231, 232, 232, 0.95);
@@ -210,15 +215,14 @@ html,body{
     border-bottom-left-radius: 5px;
     width: 20%;
     height: 100%;
-    .dots{
-            height: 10PX;
-            width: 70px;
-            margin-top: 7px;
-            margin-left: 6px;
-        
+    .dots {
+        height: 10px;
+        width: 70px;
+        margin-top: 7px;
+        margin-left: 6px;
     }
 }
-.note-folder{
+.note-folder {
     display: flex;
     width: 90%;
     height: 26px;
@@ -226,47 +230,47 @@ html,body{
     margin-top: 20px;
     margin-left: 5%;
     cursor: pointer;
-    background:rgba(206, 207, 206, 95);
-    color: #3E3F3E;
+    background: rgba(206, 207, 206, 95);
+    color: #3e3f3e;
     fill: purple;
 
-    p{
+    p {
         margin-top: 6px;
         font-size: 12px;
     }
-    svg{
+    svg {
         width: 18px !important;
         margin-left: 4px;
         margin-right: 2px;
     }
 }
 
-.note-number{
-    color: #8E8F8E;
+.note-number {
+    color: #8e8f8e;
     margin-left: 3px;
 }
-.title-color-js{
-    background-color: #953D96 !important;
+.title-color-js {
+    background-color: #953d96 !important;
     color: white;
 }
-.folder-color-js{
-    background:rgb(173, 180, 187);
+.folder-color-js {
+    background: rgb(173, 180, 187);
 }
-.other-folder{
+.other-folder {
     margin-top: 4px;
 }
-.svgFolderJs{
+.svgFolderJs {
     fill: white !important;
 }
-.svgFolderTrashJs{
+.svgFolderTrashJs {
     fill: white !important;
 }
-.right-side-note{
+.right-side-note {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-.note-content{
+.note-content {
     display: flex;
     height: 100%;
     background-color: white;
@@ -274,14 +278,14 @@ html,body{
     color: #272727;
 }
 
-.title-note-js{
-    background-color: #953D96 ;
+.title-note-js {
+    background-color: #953d96;
     color: white;
 }
-.title-note-container{
+.title-note-container {
     width: 160px;
 }
-.title-note{
+.title-note {
     position: relative;
     width: 86%;
     height: 45px;
@@ -289,48 +293,48 @@ html,body{
     border-radius: 8px;
     overflow: none;
     margin: 10px;
-    p{
+    p {
         line-height: 35px;
         margin: 0;
         font-size: 11.5px;
         margin-left: 15px;
     }
-    &:hover{
-        transform: scale(1.07,1.07);
+    &:hover {
+        transform: scale(1.07, 1.07);
         cursor: default;
     }
-    span{
+    span {
         position: absolute;
         top: 14px;
         font-size: 11px;
     }
-    span2{
+    span2 {
         opacity: 0.6;
         font-size: 10px;
     }
 }
-.title-note2{
+.title-note2 {
     transform: translateY(10px);
     width: 86%;
     height: 45px;
     background-color: white;
 }
-.main-note{
-    border-left: 1px solid #E6E6E6;
+.main-note {
+    border-left: 1px solid #e6e6e6;
     width: 100%;
-    .date{
+    .date {
         font-size: 0.8vw;
         text-align: left;
         margin: auto;
         text-align: center;
     }
-    p{
+    p {
         font-size: 1vw;
         padding-top: 4px;
         padding-left: 10px;
     }
 }
-.type-effect{
+.type-effect {
     display: inline-block;
     margin-left: 0.5px;
     transform: scaleX(0.5);
@@ -346,70 +350,69 @@ html,body{
         opacity: 1;
     }
 }
-.main-note2{
-    border-left: 1px solid #E6E6E6;
+.main-note2 {
+    border-left: 1px solid #e6e6e6;
     width: 100%;
-    .date{
+    .date {
         font-size: 9px;
         text-align: left;
         margin: auto;
         text-align: center;
     }
-    p{
+    p {
         font-size: 11px;
         padding-top: 4px;
         padding-left: 10px;
-        
     }
 }
-.top-row-note{
+.top-row-note {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 45px;
     width: 100%;
-    background-color: #F0F2F3;
+    background-color: #f0f2f3;
     border-top-right-radius: 5px;
 
-    .notes-icons{
+    .notes-icons {
         display: flex;
         height: 40px;
     }
-    .burger{
-        background:rgba(197, 204, 211, 0.5);
+    .burger {
+        background: rgba(197, 204, 211, 0.5);
         width: 25px;
         border-radius: 6px;
         margin: 0px 20px 0 20px;
-        padding: 1px 5px 1px 5px; 
+        padding: 1px 5px 1px 5px;
     }
-    .burger:hover{
+    .burger:hover {
         background-color: #bbc2c5;
     }
-    .trash{
-        background:rgba(197, 204, 211, 0);
+    .trash {
+        background: rgba(197, 204, 211, 0);
         border-radius: 6px;
-        padding: 5PX 1PX 0PX 7PX; 
-        margin-top: 3PX;
-        margin-left: 4PX;
+        padding: 5px 1px 0px 7px;
+        margin-top: 3px;
+        margin-left: 4px;
         transform: scale(0.85);
     }
-    .trash:hover{
-        background:rgba(197, 204, 211, 0.5);
+    .trash:hover {
+        background: rgba(197, 204, 211, 0.5);
     }
 }
 /*** Contact Container ***/
-.contact-container{
+.contact-container {
     display: flex;
     position: absolute;
     top: 57%;
     left: 11%;
     border: 1px solid #f1f1f1;
     border-radius: 8px;
-    width: 28%; 
+    width: 28%;
     height: 35%;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
-.left-column-contact{
+.left-column-contact {
     display: flex;
     flex-direction: column;
     background: rgba(231, 232, 232, 0.95);
@@ -418,14 +421,14 @@ html,body{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     overflow: auto;
-        .dots{
-            width: 70px;
-            margin-top: 3px;
-            margin-left: 10px;
-            margin-bottom: 10px;
-        }
+    .dots {
+        width: 70px;
+        margin-top: 3px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
 }
-.contact-input{
+.contact-input {
     border-radius: 6px;
     border: none;
     margin: 10px;
@@ -434,51 +437,52 @@ html,body{
     background-repeat: no-repeat;
     height: 20px;
     background-image: url(../images/magnifying-glass.png);
-    &::placeholder{
-    padding-left: 19px;
+    &::placeholder {
+        padding-left: 19px;
     }
 }
-.me{
+
+.me {
     border-top: 1px solid grey;
     width: 70%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    color: #A9AAAA;
+    color: #a9aaaa;
     margin: 10px;
     font-size: 10px;
 }
-.me-m{
+.me-m {
     display: flex;
     justify-content: center;
 }
-.mic{
+.mic {
     font-size: 11px;
     font-weight: bold;
     margin-left: 6%;
     margin-bottom: -3%;
     color: white;
-    background-color: #7E1D88;
+    background-color: #7e1d88;
     width: 70%;
     height: 17px;
     border-radius: 5px;
     text-align: left;
     padding-left: 10%;
     padding-top: 6px;
-    &:hover{
-        transform: scale(1.04,1.04);
+    &:hover {
+        transform: scale(1.04, 1.04);
     }
 }
-.me-p{
+.me-p {
     border: none;
 }
-.right-column-contact{
+.right-column-contact {
     @include h100w100();
     display: flex;
     justify-content: center;
     position: relative;
 }
-.contact-content{
+.contact-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -488,14 +492,14 @@ html,body{
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
 }
-.avatar{
+.avatar {
     margin-top: 5%;
     width: 27%;
     height: 27%;
     max-height: auto;
     border-radius: 50%;
     background-color: black;
-    img{
+    img {
         object-fit: contain;
         width: 100%;
         height: 100%;
@@ -503,7 +507,7 @@ html,body{
     }
 }
 
-.contact-informations{
+.contact-informations {
     margin-top: 13px;
     width: 100%;
     height: 60%;
@@ -511,49 +515,49 @@ html,body{
     justify-content: space-evenly;
     position: relative;
     overflow: auto;
-    .line1{
+    .line1 {
         position: absolute;
         color: #808080;
         font-size: 12px;
-        border-bottom: 1px solid #E6E6E6;
+        border-bottom: 1px solid #e6e6e6;
         width: 80%;
         top: 40%;
         left: 10%;
     }
-    .line2{
+    .line2 {
         position: absolute;
         color: #808080;
         font-size: 12px;
-        border-bottom: 1px solid #E6E6E6;
+        border-bottom: 1px solid #e6e6e6;
         width: 80%;
         top: 60%;
         left: 10%;
     }
-    .line3{
+    .line3 {
         position: absolute;
         color: #808080;
         font-size: 12px;
-        border-bottom: 1px solid #E6E6E6;
+        border-bottom: 1px solid #e6e6e6;
         width: 80%;
         top: 80%;
         left: 10%;
-        a{
+        a {
             color: purple;
             text-decoration-color: purple;
         }
     }
 }
-.contact-icons{
+.contact-icons {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
 }
-.contact-text-icons{
+.contact-text-icons {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
 }
-.phone-icon{
+.phone-icon {
     margin-top: 2px;
     background-image: url(../images/phone-icon.png);
     background-size: contain;
@@ -561,38 +565,36 @@ html,body{
     width: 25px;
     height: 15%;
     transform: translateX(35%);
-    p{
+    p {
         font-size: 12px;
         color: #943195;
         text-align: center;
         margin-top: 25px;
         transform: translateX(-2px);
     }
-    
 }
-.email-icon{
+.email-icon {
     margin-top: 2px;
     background-image: url(../images/email-icon.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 25PX;
+    width: 25px;
     height: 15%;
     position: absolute;
     right: 33%;
-    &:hover{
-        transform: scale(1.06,1.06);
+    &:hover {
+        transform: scale(1.06, 1.06);
     }
-    p{
+    p {
         font-size: 12px;
         color: #943195;
         text-align: center;
         margin-top: 25px;
         transform: translateX(-2px);
-
     }
 }
 /*** Project Container ***/
-.projects-container{
+.projects-container {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -601,22 +603,22 @@ html,body{
     left: 50%;
     border: 1px solid #f1f1f1;
     border-radius: 10px;
-    width: 45%; 
+    width: 45%;
     height: 55%;
 }
-.top-bar-projects{
+.top-bar-projects {
     width: 100%;
     height: 40px;
     background-color: white;
-    border-top-left-radius: 8px ;
-    border-top-right-radius: 8px ;
-    .dots{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    .dots {
         width: 70px;
         margin-top: 10px;
         margin-left: 10px;
     }
 }
-.projects-section{
+.projects-section {
     background-color: white;
     @include h100w100();
     border-bottom-left-radius: 8px;
@@ -624,25 +626,25 @@ html,body{
     overflow: auto;
     display: grid;
     grid-template-rows: 40% 40% 40% 40%;
-    grid-template-columns: 1FR 1FR;
+    grid-template-columns: 1fr 1fr;
     gap: 6px;
     overflow-x: hidden;
-    @media  screen and (max-width: 1070px) and (min-width:700px) {
+    @media screen and (max-width: 1070px) and (min-width: 700px) {
         width: 83%;
         margin: auto;
     }
-    img{
+    img {
         cursor: pointer;
         @include h100w100();
-        @media  screen and (max-width: 450px) {
-            transform: scale(1,0.5);
+        @media screen and (max-width: 450px) {
+            transform: scale(1, 0.5);
         }
-        &:hover{
+        &:hover {
             opacity: 0.8;
         }
     }
 }
-.overlay{
+.overlay {
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -654,14 +656,14 @@ html,body{
     margin: 0;
     margin: auto;
 }
-.projects-section > div{
+.projects-section > div {
     position: relative;
 }
-.project{
+.project {
     @include projects();
     background-color: white;
 }
-.web{
+.web {
     position: absolute;
     top: 5px;
     right: 90px;
@@ -670,21 +672,21 @@ html,body{
     border-radius: 10px;
     border: 1px solid;
     cursor: pointer;
-    a{
+    a {
         font-size: 14px;
         color: black;
     }
-    &:hover{
+    &:hover {
         transform: scale(1.04);
     }
 }
-.fa-globe{
-    transform: translateX(0px)translateY(1px);
+.fa-globe {
+    transform: translateX(0px) translateY(1px);
 }
-.fa-readme{
+.fa-readme {
     transform: translateY(2px);
 }
-.readme{
+.readme {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -693,11 +695,11 @@ html,body{
     border-radius: 10px;
     border: 1px solid;
     cursor: pointer;
-    a{
+    a {
         font-size: 14px;
         color: black;
     }
-    &:hover{
+    &:hover {
         transform: scale(1.04);
     }
 }
@@ -727,12 +729,12 @@ html,body{
 //             transform: translate(-50%,-50%);
 //             width: 50%;
 //             height: 50%;
-            
+
 //         }
 // }
 
 /*** Gps Container ***/
-.gps-container{
+.gps-container {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -743,57 +745,56 @@ html,body{
     border-radius: 8px;
     width: 25%;
     height: 27%;
-    .dots{
+    .dots {
         width: 70px;
         margin-top: 7px;
         margin-left: 7px;
     }
-    .dots-container{
+    .dots-container {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
     }
 }
 
-#map{
+#map {
     @include h100w100();
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
     position: relative;
-    .dots{
+    .dots {
         position: absolute;
         top: 100%;
         z-index: 1;
         width: 70px;
         margin-top: 10px;
         margin-left: 10px;
-        
     }
 }
 
 /*** option container ***/
-.option-container{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 7%;
-        left: 56%;
-        border-radius: 9px;
-        width: 18%;
-        height: 150px;
-        border: 1px solid #f1f1f1;
-        .dots{
-            width: 70px;
-            margin-top: 7px;
-            margin-left: 7px;
-        }
+.option-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 7%;
+    left: 56%;
+    border-radius: 9px;
+    width: 18%;
+    height: 150px;
+    border: 1px solid #f1f1f1;
+    .dots {
+        width: 70px;
+        margin-top: 7px;
+        margin-left: 7px;
+    }
 }
-.top-bar-option{
+.top-bar-option {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     background-color: white;
     height: 40px;
 }
-.arrow{
+.arrow {
     display: flex;
     color: #cecfce;
     position: absolute;
@@ -801,128 +802,122 @@ html,body{
     top: 6px;
     font-size: 19px;
 }
-.fa-arrow-circle-left{
+.fa-arrow-circle-left {
     margin-right: 10px;
-    &:hover{
+    &:hover {
         opacity: 0.8;
     }
 }
-.fa-arrow-circle-right{
-    &:hover{
+.fa-arrow-circle-right {
+    &:hover {
         opacity: 0.8;
     }
 }
 
-.option-container-features{
+.option-container-features {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: space-evenly;
-    background-color: #F0F2F3;
+    background-color: #f0f2f3;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     font-size: 15px;
     height: 100%;
 }
-.night-mode{
-    display: flex;    
-    .day{
+.night-mode {
+    display: flex;
+    .day {
         width: 55px;
         height: 45px;
         border-radius: 10px;
         object-fit: cover;
     }
-    .night{
+    .night {
         width: 55px;
         height: 45px;
         border-radius: 10px;
         object-fit: cover;
     }
 }
-.night-mode-text{
+.night-mode-text {
     font-size: 1vw;
     color: #272727;
     align-self: flex-end;
 }
 
 /*** Icon Bar ***/
-.icons-bar{
+.icons-bar {
     z-index: 3;
     position: absolute;
     background-color: rgba(134, 147, 161, 0.7);
-    border: 2px ridge #333F47;
+    border: 2px ridge #333f47;
     border-radius: 20px;
     width: 40%;
     height: 66px;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     right: 0;
-    margin: auto
+    margin: auto;
 }
-.icons{
-    display:flex; 
-    justify-content:space-around;
+.icons {
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     height: 100%;
     align-items: center;
 }
-.border{
-    border-left: 1px solid #333F47;
+.border {
+    border-left: 1px solid #333f47;
     height: 75%;
 }
-.contact-icon{
+.contact-icon {
     background-image: url(../images/contact-icon.png);
     @include iconPosition();
 }
-.contactme-alert{
+.contactme-alert {
     @include iconAlertPosition();
 }
-.photo-icon{
+.photo-icon {
     background-image: url(../images/photos-icon.png);
     @include iconPosition();
 }
-.photo-alert{
+.photo-alert {
     @include iconAlertPosition();
-
 }
-.note-icon{
+.note-icon {
     background-image: url(../images/note-icon.png);
     @include iconPosition();
-
 }
-.note-alert{
+.note-alert {
     @include iconAlertPosition();
-
 }
-.gps-icon{
+.gps-icon {
     background-image: url(../images/gps-icon.png);
     @include iconPosition();
-
 }
-.gps-alert{
+.gps-alert {
     @include iconAlertPosition();
-
 }
-.option-icon{
+.option-icon {
     background-image: url(../images/parametre.png);
     @include iconPosition();
 }
-.option-alert{
-@include iconAlertPosition();
+.option-alert {
+    @include iconAlertPosition();
 }
-.github-icon{
+.github-icon {
     @include iconPosition();
     border-radius: 50%;
-    @media screen and (max-width:500px){
+    @media screen and (max-width: 500px) {
         display: none;
     }
 }
-.github-alert{
+.github-alert {
     @include iconAlertPosition();
-
 }
-.dot-icon{
-    background-color: #B3B3AC;
+.dot-icon {
+    background-color: #b3b3ac;
     width: 5px;
     height: 5px;
     border-radius: 50%;
@@ -931,87 +926,86 @@ html,body{
     left: 44%;
     bottom: -14%;
 }
-.dot-icon1{
+.dot-icon1 {
 }
-.dot-icon2{
+.dot-icon2 {
     display: none;
 }
-.dot-icon3{
+.dot-icon3 {
 }
-.dot-icon4{
+.dot-icon4 {
     display: none;
 }
-.dot-icon5{ 
+.dot-icon5 {
     display: none;
 }
-.dot-icon6{
+.dot-icon6 {
     display: none;
 }
 /** Ipad **/
-.left-ipad{
+.left-ipad {
     display: none;
     z-index: 1;
 }
-.right-ipad{
+.right-ipad {
     display: none;
     z-index: 1;
 }
-.top-ipad{
+.top-ipad {
     display: none;
     z-index: 1;
 }
-.bottom-ipad{
+.bottom-ipad {
     display: none;
     transform: translateY(3px);
 }
-.iphone{
+.iphone {
     display: none;
 }
-.iphone5{
+.iphone5 {
     display: none;
 }
 
 /** Apple ipad view **/
-@media screen and (max-width: 800px ) and (min-width: 700px) and (max-width:800px) {
-    .contact-container{
+@media screen and (max-width: 800px) and (min-width: 700px) and (max-width: 800px) {
+    .contact-container {
         margin-left: 20px;
     }
 }
 /** tablet (height) view **/
-@media screen and (max-height: 700px ){
-
+@media screen and (max-height: 700px) {
 }
-@media screen and (max-height: 700px ) and (min-width: 700px){
-    .title-note{
+@media screen and (max-height: 700px) and (min-width: 700px) {
+    .title-note {
         display: none;
     }
 }
-@media screen and (max-height: 700px ){
-    .note-container{
+@media screen and (max-height: 700px) {
+    .note-container {
         left: 0px !important;
     }
 }
-@media screen and (max-width: 1070px ) {
-    .avatar{
+@media screen and (max-width: 1070px) {
+    .avatar {
         width: 200px;
     }
-    .night-mode-text{
+    .night-mode-text {
         font-size: 15px;
     }
-    .top-bar-option{
+    .top-bar-option {
         display: none;
     }
-    .main-note{
+    .main-note {
         height: 100vh;
-        p{
+        p {
             font-size: 12px;
             margin-right: 28%;
         }
-        .date{
+        .date {
             font-size: 9px;
         }
     }
-    .ipad-button3{
+    .ipad-button3 {
         z-index: 2;
         display: flex;
         width: 10%;
@@ -1024,11 +1018,11 @@ html,body{
         bottom: -2%;
         transform: translate(-50%, -50%);
     }
-    @media screen and (max-height: 542px) and (min-width: 700px){
-        .ipad-button3{
+    @media screen and (max-height: 542px) and (min-width: 700px) {
+        .ipad-button3 {
             display: none;
         }
-        .ipad-button2{
+        .ipad-button2 {
             z-index: 2;
             display: flex;
             width: 40px;
@@ -1039,14 +1033,14 @@ html,body{
             left: 5px;
             border-radius: 50%;
         }
-        .ipad-button{
+        .ipad-button {
             display: none;
         }
     }
-    .ipad-button3{
+    .ipad-button3 {
         display: none;
     }
-    .ipad-button{
+    .ipad-button {
         z-index: 2;
         display: flex;
         width: 40px;
@@ -1057,31 +1051,31 @@ html,body{
         left: 20px;
         border-radius: 50%;
     }
-    .icons-bar{
+    .icons-bar {
         height: 63px;
         width: 70%;
         margin-bottom: 67px;
     }
-    .left-column-note{
+    .left-column-note {
         display: none;
     }
-    .left-column-contact{
+    .left-column-contact {
         display: none;
     }
-    .top-bar-projects{
+    .top-bar-projects {
         display: none;
     }
-    .dots-container{
+    .dots-container {
         display: none;
     }
-    .option-container{
+    .option-container {
         display: none;
         height: 100%;
         width: 100%;
         top: 0;
         left: 0;
     }
-    .contact-container{
+    .contact-container {
         display: none;
         height: 100%;
         width: 100%;
@@ -1089,15 +1083,15 @@ html,body{
         left: 0;
         background-color: white;
     }
-    
-    .projects-container{
+
+    .projects-container {
         display: none;
         height: 100%;
         width: 100%;
         top: 0;
         left: 0;
     }
-    .note-container{
+    .note-container {
         display: none;
         height: 100%;
         width: 100%;
@@ -1105,36 +1099,36 @@ html,body{
         left: 79px;
         border-radius: 0px;
     }
-   
-    .gps-container{
+
+    .gps-container {
         display: none;
         height: 100%;
         width: 100%;
         top: 0;
         left: 0;
     }
-    .top-mac{
+    .top-mac {
         display: none;
     }
-    .macnitor{
+    .macnitor {
         display: none;
     }
-    .left-ipad{
+    .left-ipad {
         display: none;
     }
-    .right-ipad{
+    .right-ipad {
         display: none;
     }
-    .background{
+    .background {
     }
-   
-    .top-ipad{
+
+    .top-ipad {
         display: flex;
         width: 100%;
         position: absolute;
         height: 60px;
     }
-    .bottom-ipad{
+    .bottom-ipad {
         display: flex;
         width: 100%;
         position: absolute;
@@ -1142,31 +1136,35 @@ html,body{
         height: 60px;
     }
 }
-@media screen and (min-height: 800px ){
-    @media screen and (min-width: 1070px){
-        .avatar{
+@media screen and (min-height: 800px) {
+    @media screen and (min-width: 1070px) {
+        .avatar {
             height: 90px;
             width: 90px;
         }
     }
-    
 }
 /** Horizontal tablet view**/
-@media screen and (max-width: 1070px ) {
-    .dot-icon{
+@media screen and (max-width: 1070px) {
+    .dot-icon {
         display: none !important;
     }
-    .border{
+    .border {
         display: none;
     }
-    @media screen and (min-height: 800px ){
-    .avatar{
-        height: 200px;
-        width: 200px;
+    @media screen and (min-height: 800px) {
+        .avatar {
+            height: 200px;
+            width: 200px;
+        }
+        .ipad-button {
+            display: none;
+        }
+        .ipad-button2 {
+            display: none;
+        }
     }
-    .ipad-button{display: none;}
-    .ipad-button2{display: none;}}
-    .ipad-button3{
+    .ipad-button3 {
         z-index: 2;
         display: flex;
         width: 10%;
@@ -1179,13 +1177,13 @@ html,body{
         bottom: -2%;
         transform: translate(-50%, -50%);
     }
-    @media screen and (min-height: 800px ){
-        .note-container{
+    @media screen and (min-height: 800px) {
+        .note-container {
             left: 0px !important;
         }
     }
-    @media screen and (max-height: 800px ){
-        .ipad-button3{
+    @media screen and (max-height: 800px) {
+        .ipad-button3 {
             z-index: 2;
             display: flex;
             width: 10%;
@@ -1198,82 +1196,80 @@ html,body{
             bottom: -3%;
             transform: translate(-50%, -50%);
         }
-    .icons-bar{
-        transform: translateY(60px);
-    }
-    .left-ipad{
-        display: flex;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: -1px;
-    }
-    .right-ipad{
-        display: flex;
-        height: 100%;
-        position: absolute;
-        right: 0;
-    }
-    .top-ipad{
-        display: none;
-    }
-    .bottom-ipad{
-        display: none;
-    }
-}
-.iphone{
-    display: none;
-}
-}
-/** Tablet view**/
-@media screen and (min-width: 700px ){
-    @media screen and (max-height: 800px ){
-        .ipad-button3{
-            display: none;
-        }
-    }
-    
-}
-@media screen and (width: 1024px ) {
-    
-        @media screen and (height: 768px ){
-        
-        .icons-bar{
+        .icons-bar {
             transform: translateY(60px);
         }
-        .left-ipad{
+        .left-ipad {
             display: flex;
             height: 100%;
             position: absolute;
             left: 0;
+            top: -1px;
         }
-        .right-ipad{
+        .right-ipad {
             display: flex;
             height: 100%;
             position: absolute;
             right: 0;
         }
-        .top-ipad{
+        .top-ipad {
             display: none;
         }
-        .bottom-ipad{
+        .bottom-ipad {
             display: none;
         }
     }
-
+    .iphone {
+        display: none;
+    }
 }
-@media screen and (height: 1024px ) {
-        @media screen and (width: 768px ){
-            .ipad-button{
-                display: none;
-            }
-            .ipad-button2{display: none;}
+/** Tablet view**/
+@media screen and (min-width: 700px) {
+    @media screen and (max-height: 800px) {
+        .ipad-button3 {
+            display: none;
         }
     }
+}
+@media screen and (width: 1024px) {
+    @media screen and (height: 768px) {
+        .icons-bar {
+            transform: translateY(60px);
+        }
+        .left-ipad {
+            display: flex;
+            height: 100%;
+            position: absolute;
+            left: 0;
+        }
+        .right-ipad {
+            display: flex;
+            height: 100%;
+            position: absolute;
+            right: 0;
+        }
+        .top-ipad {
+            display: none;
+        }
+        .bottom-ipad {
+            display: none;
+        }
+    }
+}
+@media screen and (height: 1024px) {
+    @media screen and (width: 768px) {
+        .ipad-button {
+            display: none;
+        }
+        .ipad-button2 {
+            display: none;
+        }
+    }
+}
 /** Apple Ipad Pro view **/
-@media screen and (width: 1024px ) {
-    @media screen and (height: 1366px ){
-        .ipad-button3{
+@media screen and (width: 1024px) {
+    @media screen and (height: 1366px) {
+        .ipad-button3 {
             z-index: 2;
             display: flex;
             width: 10%;
@@ -1286,54 +1282,57 @@ html,body{
             bottom: -2%;
             transform: translate(-50%, -50%);
         }
-}}
+    }
+}
 /** Tablet vertica viewl **/
-@media screen and (max-width: 700px ) {
-    .main-note{
-        p{
+@media screen and (max-width: 700px) {
+    .main-note {
+        p {
             font-size: 12px;
             margin-right: 0;
         }
     }
-    .top-ipad{
+    .top-ipad {
         display: flex;
     }
-    .left-ipad{
+    .left-ipad {
         display: none;
     }
-    .right-ipad{
+    .right-ipad {
         display: none;
     }
-    .bottom-ipad{
+    .bottom-ipad {
         display: flex;
     }
-    .icons-bar{
+    .icons-bar {
         transform: translateY(-1px);
     }
-    .note-container{
+    .note-container {
         left: 0;
     }
-    .ipad-button{display: none;}
-    .ipad-button2{display: none;}
-    .icons-bar{
+    .ipad-button {
+        display: none;
+    }
+    .ipad-button2 {
+        display: none;
+    }
+    .icons-bar {
         width: 95%;
     }
 }
 /** Phone view **/
-@media screen and (max-width: 500px ){
-    .avatar{
+@media screen and (max-width: 500px) {
+    .avatar {
         width: 150px;
         height: 150px;
     }
-  
 }
-@media screen and (max-width: 250px ) {
-    .icons-bar{
+@media screen and (max-width: 250px) {
+    .icons-bar {
         height: 50px;
     }
 }
-.overlay{
+.overlay {
 }
-.project img{
-
+.project img {
 }

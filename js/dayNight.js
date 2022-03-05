@@ -1,4 +1,5 @@
 $(".night").click(function () {
+    $('html').css({'background':'#333333'});
     $(".icons-bar").addClass("iconsBarColorJs");
 
     $(".main-note").addClass("borderLeftJs");
@@ -24,6 +25,7 @@ $(".night").click(function () {
     })
 });
 $(".day").click(function () {
+    $('html').css({'background':'#FFFFFF'});
 
     $(".icons-bar").removeClass("iconsBarColorJs");
 

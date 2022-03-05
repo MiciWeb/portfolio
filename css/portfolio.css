@@ -15,7 +15,7 @@
 }
 
 .dots .dot1 {
-  background-color: #ED594A;
+  background-color: #ed594a;
   height: 11px;
   width: 11px;
   border-radius: 50%;
@@ -24,7 +24,7 @@
 }
 
 .dots .dot2 {
-  background-color: #FDD800;
+  background-color: #fdd800;
   height: 11px;
   width: 11px;
   border-radius: 50%;
@@ -34,7 +34,7 @@
 
 .dots .dot3 {
   background-size: contain;
-  background-color: #5AC05A;
+  background-color: #5ac05a;
   height: 11px;
   width: 11px;
   border-radius: 50%;
@@ -70,14 +70,20 @@
 }
 
 /*** Main ***/
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100vh;
-  width: 100vw;
+  width: 90vw;
   font-family: sans-serif;
+  background-color: #ffffff;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .desktop {
@@ -109,7 +115,7 @@ html, body {
 }
 
 .borderModeJs {
-  border: 2px solid #007AFF;
+  border: 2px solid #007aff;
 }
 
 .dayBackgroundJs {
@@ -129,7 +135,7 @@ html, body {
 }
 
 .top-rowNightJS {
-  background-color: #3A3837 !important;
+  background-color: #3a3837 !important;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -144,9 +150,9 @@ html, body {
 }
 
 .macnitor {
-  width: 100%;
-  -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
+  width: 100vw;
+  -webkit-filter: drop-shadow(2px 2px 25px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(2px 2px 25px rgba(0, 0, 0, 0.5));
 }
 
 .top-mac {
@@ -238,7 +244,7 @@ html, body {
 }
 
 .left-column-note .dots {
-  height: 10PX;
+  height: 10px;
   width: 70px;
   margin-top: 7px;
   margin-left: 6px;
@@ -255,7 +261,7 @@ html, body {
   margin-left: 5%;
   cursor: pointer;
   background: #cecfce;
-  color: #3E3F3E;
+  color: #3e3f3e;
   fill: purple;
 }
 
@@ -271,12 +277,12 @@ html, body {
 }
 
 .note-number {
-  color: #8E8F8E;
+  color: #8e8f8e;
   margin-left: 3px;
 }
 
 .title-color-js {
-  background-color: #953D96 !important;
+  background-color: #953d96 !important;
   color: white;
 }
 
@@ -318,7 +324,7 @@ html, body {
 }
 
 .title-note-js {
-  background-color: #953D96;
+  background-color: #953d96;
   color: white;
 }
 
@@ -369,7 +375,7 @@ html, body {
 }
 
 .main-note {
-  border-left: 1px solid #E6E6E6;
+  border-left: 1px solid #e6e6e6;
   width: 100%;
 }
 
@@ -417,7 +423,7 @@ html, body {
 }
 
 .main-note2 {
-  border-left: 1px solid #E6E6E6;
+  border-left: 1px solid #e6e6e6;
   width: 100%;
 }
 
@@ -446,7 +452,7 @@ html, body {
           align-items: center;
   height: 45px;
   width: 100%;
-  background-color: #F0F2F3;
+  background-color: #f0f2f3;
   border-top-right-radius: 5px;
 }
 
@@ -472,9 +478,9 @@ html, body {
 .top-row-note .trash {
   background: rgba(197, 204, 211, 0);
   border-radius: 6px;
-  padding: 5PX 1PX 0PX 7PX;
-  margin-top: 3PX;
-  margin-left: 4PX;
+  padding: 5px 1px 0px 7px;
+  margin-top: 3px;
+  margin-left: 4px;
   -webkit-transform: scale(0.85);
           transform: scale(0.85);
 }
@@ -555,7 +561,7 @@ html, body {
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  color: #A9AAAA;
+  color: #a9aaaa;
   margin: 10px;
   font-size: 10px;
 }
@@ -575,7 +581,7 @@ html, body {
   margin-left: 6%;
   margin-bottom: -3%;
   color: white;
-  background-color: #7E1D88;
+  background-color: #7e1d88;
   width: 70%;
   height: 17px;
   border-radius: 5px;
@@ -658,7 +664,7 @@ html, body {
   position: absolute;
   color: #808080;
   font-size: 12px;
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid #e6e6e6;
   width: 80%;
   top: 40%;
   left: 10%;
@@ -668,7 +674,7 @@ html, body {
   position: absolute;
   color: #808080;
   font-size: 12px;
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid #e6e6e6;
   width: 80%;
   top: 60%;
   left: 10%;
@@ -678,7 +684,7 @@ html, body {
   position: absolute;
   color: #808080;
   font-size: 12px;
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid #e6e6e6;
   width: 80%;
   top: 80%;
   left: 10%;
@@ -735,7 +741,7 @@ html, body {
   background-image: url(../images/email-icon.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 25PX;
+  width: 25px;
   height: 15%;
   position: absolute;
   right: 33%;
@@ -799,8 +805,8 @@ html, body {
   display: grid;
   -ms-grid-rows: 40% 40% 40% 40%;
       grid-template-rows: 40% 40% 40% 40%;
-  -ms-grid-columns: 1FR 1FR;
-      grid-template-columns: 1FR 1FR;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   gap: 6px;
   overflow-x: hidden;
 }
@@ -1021,7 +1027,7 @@ html, body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: #F0F2F3;
+  background-color: #f0f2f3;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   font-size: 15px;
@@ -1062,11 +1068,11 @@ html, body {
   z-index: 3;
   position: absolute;
   background-color: rgba(134, 147, 161, 0.7);
-  border: 2px ridge #333F47;
+  border: 2px ridge #333f47;
   border-radius: 20px;
   width: 40%;
   height: 66px;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
   right: 0;
   margin: auto;
@@ -1086,7 +1092,7 @@ html, body {
 }
 
 .border {
-  border-left: 1px solid #333F47;
+  border-left: 1px solid #333f47;
   height: 75%;
 }
 
@@ -1217,7 +1223,7 @@ html, body {
 }
 
 .dot-icon {
-  background-color: #B3B3AC;
+  background-color: #b3b3ac;
   width: 5px;
   height: 5px;
   border-radius: 50%;
